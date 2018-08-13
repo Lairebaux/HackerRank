@@ -10,13 +10,15 @@ bill is fairly split, print Bon Appétit. Otherwise, print the integer amount of
 must refund to Anna.
 """
 
-def bon_appetit(items, index, expected):
-    unwanted = items.pop(index)
-    total = sum(items) // 2
+def bon_appetit(bill, k, b):
+    unwanted = bill.pop(k)
+    total = sum(bill) // 2
     refund = unwanted // 2
-    if total == expected:
-        return "Bon Appetit"
-    return refund
+    if total == b:
+        return("Bon Appetit")
+    return (refund)
 
 
 
+
+bon_appetit([3,10,2,9],1,12)
